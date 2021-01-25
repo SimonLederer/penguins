@@ -1,0 +1,207 @@
+:root {
+  --rb-primary: #048a94;
+  --rb-secondary: aliceblue;
+  --rb-colour-three: #8fbec2;
+  /* --rb-image-url: url(../images/cities/houston.jpg); */
+}
+
+.railbaron-header {
+  background-color: var(--rb-primary);
+  text-align: center;
+  width: 100%;
+  border-bottom: 3px solid black;
+  font-size: 3.5vh;
+  height: 5vh;
+  font-weight: bold;
+}
+
+.panel-list {
+  background-color: var(--rb-primary);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.panel-btn {
+  background-color: var(--rb-secondary);
+  width: 80%;
+  margin: 1vh;
+  font-size: 3vh;
+  font-weight: bold;
+  padding: 3vmin;
+  cursor: url("train.cur"), auto;
+}
+
+.panel-btn:hover {
+  background-color: var(--rb-colour-three);
+}
+
+.main-screen-container {
+  display: flex;
+  height: 95vh;
+}
+
+.divider-vertical {
+  width: 0.2vw;
+  background-color: black;
+  height: 100%;
+}
+
+.divider-horizontal {
+  height: 0.2vw;
+  background-color: black;
+  width: 100%;
+}
+
+.main-screen-right-side {
+  background-color: var(--rb-primary);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.RBstatus {
+  /* height: 65vh; */
+  padding: 0 2% 2% 2%;
+  width: 100%;
+  /* overflow: auto; */
+}
+
+.RBstatus h1 {
+  font-size: 5vmin;
+}
+
+.RB-content-box {
+  background-color: var(--rb-colour-three);
+  width: 100%;
+  /* height: 85%; */
+  /* position: absolute; */
+  border-radius: 5px;
+  border: solid 1px black;
+  padding: 1vmin;
+}
+
+.RB-content-box h2 {
+  font-size: 3.2vmin;
+}
+.RB-content-box span {
+  font-size: 4vmin;
+}
+
+.RBhome-towns {
+  width: 100%;
+  overflow: auto;
+  padding: 0 2% 2% 2%;
+}
+
+.RBhome-towns h1 {
+  font-size: 4vmin;
+}
+
+.RBhome-towns div div {
+  font-size: 3.5vmin;
+}
+
+.RB-same-region-panel {
+  height: 85vh;
+  overflow: auto;
+}
+
+.RB-same-region-panel button {
+  padding: 2.5vmin;
+}
+
+.RB-full-screen-primary {
+  background-color: var(--rb-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 95vh;
+}
+
+.RB-full-screen-primary h1 {
+  font-size: 3vh;
+}
+
+.RB-back-btn {
+  background-image: url("../images/back-arrow.png");
+  height: 10vh;
+  width: 10vh;
+  background-size: cover;
+  background-position: center;
+  cursor: url("train.cur"), auto;
+  opacity: 1;
+}
+
+.RB-destination-background {
+  width: 100vw;
+  height: 95vh;
+  padding: 0;
+  /* background-image: var(--rb-image-url); */
+  /* background-color: var(--rb-primary); */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.RB-destination-container {
+  background-color: var(--rb-secondary);
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 2vmin;
+  margin-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.RB-destination-background img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  margin: 0px;
+}
+
+.RB-button-bar {
+  display: flex;
+  width: 100%;
+}
+
+.RB-destination-container span {
+  font-size: 5vmin;
+}
+
+.RB-destination-container h1 {
+  font-size: 20vmin;
+}
+
+.RB-continue-btn {
+  flex-grow: 2;
+  height: 10vh;
+  font-size: 3vmin;
+  cursor: url("train.cur"), auto;
+  opacity: 1;
+  border-radius: 0px;
+}
+
+input[type="submit"] {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.railbaron {
+  cursor: url("train.cur"), auto;
+}
+
+.railbaron > button {
+  cursor: url("train.cur"), auto;
+}

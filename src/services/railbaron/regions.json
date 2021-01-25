@@ -1,0 +1,37 @@
+[
+    {
+        "name": "North Central",
+        "odd": [6,7],
+        "even": []
+    },
+    {
+        "name": "Northeast",
+        "odd": [8,9,10,11,12],
+        "even": []
+    },
+    {
+        "name": "Northwest",
+        "odd": [],
+        "even": [9,10,12]
+    },
+    {
+        "name": "Plains",
+        "odd": [2],
+        "even": [8,11]
+    },
+    {
+        "name": "South Central",
+        "odd": [],
+        "even": [3,4,5]
+    },
+    {
+        "name": "Southeast",
+        "odd": [3,4,5],
+        "even": []
+    },
+    {
+        "name": "Southwest",
+        "odd": [],
+        "even": [2,6,7]
+    }
+]

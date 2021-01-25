@@ -1,0 +1,539 @@
+[
+  {
+    "name": "Albany",
+    "region": "Northeast",
+    "id": 0,
+    "even": [],
+    "odd": [5],
+    "quote": "The Fair and Friendly City"
+  },
+  {
+    "name": "Atlanta",
+    "region": "Southeast",
+    "id": 1,
+    "even": [],
+    "odd": [5,6,7],
+    "quote": "The Big Peach"
+  },
+  {
+    "name": "Baltimore",
+    "region": "Northeast",
+    "id": 2,
+    "even": [9,10,11],
+    "odd": [],
+    "quote": "Charm City"
+  },
+  {
+    "name": "Billings",
+    "region": "Northwest",
+    "id": 3,
+    "even": [],
+    "odd": [10,11],
+    "quote": "Magic City"
+  },
+  {
+    "name": "Birmingham",
+    "region": "South Central",
+    "id": 4,
+    "even": [],
+    "odd": [7],
+    "quote": "Sweet Home Alabama"
+  },
+  {
+    "name": "Boston",
+    "region": "Northeast",
+    "id": 5,
+    "even": [],
+    "odd": [6,8],
+    "quote": "The City on a Hill"
+  },
+  {
+    "name": "Buffalo",
+    "region": "Northeast",
+    "id": 6,
+    "even": [],
+    "odd": [7],
+    "quote": "The City of Light"
+  },
+  {
+    "name": "Butte",
+    "region": "Northwest",
+    "id": 7,
+    "even": [10,11],
+    "odd": [],
+    "quote": "The Richest Hill on Earth"
+  },
+  {
+    "name": "Casper",
+    "region": "Northwest",
+    "id": 8,
+    "even": [],
+    "odd": [9],
+    "quote": "The Oil City"
+  },
+  {
+    "name": "Charleston",
+    "region": "Southeast",
+    "id": 9,
+    "even": [5],
+    "odd": [],
+    "quote": "The Holy City"
+  },
+  {
+    "name": "Charlotte",
+    "region": "Southeast",
+    "id": 10,
+    "even": [],
+    "odd": [2,3],
+    "quote": "The Hornet’s Nest"
+  },
+  {
+    "name": "Chattanooga",
+    "region": "Southeast",
+    "id": 11,
+    "even": [],
+    "odd": [4],
+    "quote": "Scenic City"
+  },
+  {
+    "name": "Chicago",
+    "region": "North Central",
+    "id": 12,
+    "even": [3,7,8,12],
+    "odd": [11],
+    "quote": "The Windy City"
+  },
+  {
+    "name": "Cincinnati",
+    "region": "North Central",
+    "id": 13,
+    "even": [2,4,5],
+    "odd": [],
+    "quote": "The Queen City of the West"
+  },
+  {
+    "name": "Cleveland",
+    "region": "North Central",
+    "id": 14,
+    "even": [],
+    "odd": [2,3,4,5],
+    "quote": "The Mistake on the Lake"
+  },
+  {
+    "name": "Columbus",
+    "region": "North Central",
+    "id": 15,
+    "even": [6],
+    "odd": [],
+    "quote": "The Arch City"
+  },
+  {
+    "name": "Dallas",
+    "region": "South Central",
+    "id": 16,
+    "even": [4,6],
+    "odd": [],
+    "quote": "The Big D"
+  },
+  {
+    "name": "Denver",
+    "region": "Plains",
+    "id": 17,
+    "even": [],
+    "odd": [4,5,6],
+    "quote": "The Mile High City"
+  },
+  {
+    "name": "Des Moines",
+    "region": "Plains",
+    "id": 18,
+    "even": [8],
+    "odd": [],
+    "quote": "Hartford of the West"
+  },
+  {
+    "name": "Detroit",
+    "region": "North Central",
+    "id": 19,
+    "even": [],
+    "odd": [6,7],
+    "quote": "The Motor City"
+  },
+  {
+    "name": "El Paso",
+    "region": "Southwest",
+    "id": 20,
+    "even": [],
+    "odd": [9],
+    "quote": "The Sun City"
+  },
+  {
+    "name": "Fargo",
+    "region": "Plains",
+    "id": 21,
+    "even": [11,12],
+    "odd": [],
+    "quote": "Gateway to the West"
+  },
+  {
+    "name": "Fort Worth",
+    "region": "South Central",
+    "id": 22,
+    "even": [10,11,12],
+    "odd": [],
+    "quote": "Panther City"
+  },
+  {
+    "name": "Houston",
+    "region": "South Central",
+    "id": 23,
+    "even": [8,9],
+    "odd": [],
+    "quote": "Magnolia City"
+  },
+  {
+    "name": "Indianapolis",
+    "region": "North Central",
+    "id": 24,
+    "even": [],
+    "odd": [8],
+    "quote": "Circle City"
+  },
+  {
+    "name": "Jacksonville",
+    "region": "Southeast",
+    "id": 25,
+    "even": [7],
+    "odd": [],
+    "quote": "The Bold New City of the South"
+  },
+  {
+    "name": "Kansas City",
+    "region": "Plains",
+    "id": 26,
+    "even": [],
+    "odd": [2,3,7,8,9],
+    "quote": "The City of Fountains"
+  },
+  {
+    "name": "Knoxville",
+    "region": "Southeast",
+    "id": 27,
+    "even": [],
+    "odd": [9,11],
+    "quote": "Marble City"
+  },
+  {
+    "name": "Las Vegas",
+    "region": "Southwest",
+    "id": 28,
+    "even": [],
+    "odd": [7],
+    "quote": "The Marriage Capital of the World"
+  },
+  {
+    "name": "Little Rock",
+    "region": "South Central",
+    "id": 29,
+    "even": [],
+    "odd": [5],
+    "quote": "The Rock"
+  },
+  {
+    "name": "Los Angeles",
+    "region": "Southwest",
+    "id": 30,
+    "even": [2,6,7,8],
+    "odd": [],
+    "quote": "The City of Angels"
+  },
+  {
+    "name": "Louisville",
+    "region": "South Central",
+    "id": 31,
+    "even": [],
+    "odd": [8,11],
+    "quote": "Derby City"
+  },
+  {
+    "name": "Memphis",
+    "region": "South Central",
+    "id": 32,
+    "even": [],
+    "odd": [2,3,4,12],
+    "quote": "Bluff City"
+  },
+  {
+    "name": "Miami",
+    "region": "Southeast",
+    "id": 33,
+    "even": [6,8],
+    "odd": [],
+    "quote": "Capital of Latin America"
+  },
+  {
+    "name": "Milwaukee",
+    "region": "North Central",
+    "id": 34,
+    "even": [],
+    "odd": [9,10,12],
+    "quote": "The Cream City"
+  },
+  {
+    "name": "Minneapolis",
+    "region": "Plains",
+    "id": 35,
+    "even": [4,6],
+    "odd": [],
+    "quote": "City of Lakes"
+  },
+  {
+    "name": "Mobile",
+    "region": "Southeast",
+    "id": 36,
+    "even": [11],
+    "odd": [10,12],
+    "quote": "Azalea City"
+  },
+  {
+    "name": "Nashville",
+    "region": "South Central",
+    "id": 37,
+    "even": [],
+    "odd": [9,10],
+    "quote": "The Music City"
+  },
+  {
+    "name": "New Orleans",
+    "region": "South Central",
+    "id": 38,
+    "even": [5],
+    "odd": [6],
+    "quote": "The Big Easy"
+  },
+  {
+    "name": "New York",
+    "region": "Northeast",
+    "id": 39,
+    "even": [2,12],
+    "odd": [2,3,4,10,11,12],
+    "quote": "The Big Apple"
+  },
+  {
+    "name": "Norfolk",
+    "region": "Southeast",
+    "id": 40,
+    "even": [2,3,4,12],
+    "odd": [],
+    "quote": "Mermaid City"
+  },
+  {
+    "name": "Oakland",
+    "region": "Southwest",
+    "id": 41,
+    "even": [3,4,5],
+    "odd": [],
+    "quote": "Bright Side of the Bay"
+  },
+  {
+    "name": "Oklahoma City",
+    "region": "Plains",
+    "id": 42,
+    "even": [2,7],
+    "odd": [12],
+    "quote": "The Big Friendly"
+  },
+  {
+    "name": "Omaha",
+    "region": "Plains",
+    "id": 43,
+    "even": [9,10],
+    "odd": [],
+    "quote": "The Big O"
+  },
+  {
+    "name": "Philadelphia",
+    "region": "Northeast",
+    "id": 44,
+    "even": [6,8],
+    "odd": [],
+    "quote": "The City of Brotherly Love"
+  },
+  {
+    "name": "Phoenix",
+    "region": "Southwest",
+    "id": 45,
+    "even": [],
+    "odd": [8,11,12],
+    "quote": "Valley of the Sun"
+  },
+  {
+    "name": "Pittsburgh",
+    "region": "Northeast",
+    "id": 46,
+    "even": [4,5],
+    "odd": [],
+    "quote": "City of Bridges"
+  },
+  {
+    "name": "Pocatello",
+    "region": "Northwest",
+    "id": 47,
+    "even": [9],
+    "odd": [],
+    "quote": "Gateway to the Northwest"
+  },
+  {
+    "name": "Portland, Me.",
+    "region": "Northeast",
+    "id": 48,
+    "even": [],
+    "odd": [9],
+    "quote": "The Forest City"
+  },
+  {
+    "name": "Portland, Ore.",
+    "region": "Northwest",
+    "id": 49,
+    "even": [6,7,8,12],
+    "odd": [],
+    "quote": "The City of Roses"
+  },
+  {
+    "name": "Pueblo",
+    "region": "Plains",
+    "id": 50,
+    "even": [],
+    "odd": [10,11],
+    "quote": "Steel City"
+  },
+  {
+    "name": "Rapid City",
+    "region": "Northwest",
+    "id": 51,
+    "even": [],
+    "odd": [8],
+    "quote": "City of Presidents"
+  },
+  {
+    "name": "Reno",
+    "region": "Southwest",
+    "id": 52,
+    "even": [],
+    "odd": [4],
+    "quote": "The Biggest Little City in the World"
+  },
+  {
+    "name": "Richmond",
+    "region": "Southeast",
+    "id": 53,
+    "even": [],
+    "odd": [8],
+    "quote": "The River City"
+  },
+  {
+    "name": "Sacramento",
+    "region": "Southwest",
+    "id": 54,
+    "even": [],
+    "odd": [6],
+    "quote": "The Big Tomato"
+  },
+  {
+    "name": "Salt Lake City",
+    "region": "Northwest",
+    "id": 55,
+    "even": [3,4,5],
+    "odd": [],
+    "quote": "The Crossroads of the West"
+  },
+  {
+    "name": "San Antonio",
+    "region": "South Central",
+    "id": 56,
+    "even": [7],
+    "odd": [],
+    "quote": "Cradle of Freedom"
+  },
+  {
+    "name": "San Diego",
+    "region": "Southwest",
+    "id": 57,
+    "even": [],
+    "odd": [2,3,5],
+    "quote": "Birthplace of California"
+  },
+  {
+    "name": "San Francisco",
+    "region": "Southwest",
+    "id": 58,
+    "even": [9,10,11,12],
+    "odd": [],
+    "quote": "Golden Gate City"
+  },
+  {
+    "name": "Seattle",
+    "region": "Northwest",
+    "id": 59,
+    "even": [],
+    "odd": [4,5,6,7],
+    "quote": "The Emerald City"
+  },
+  {
+    "name": "Shreveport",
+    "region": "South Central",
+    "id": 60,
+    "even": [2,3],
+    "odd": [],
+    "quote": "Ratchet City"
+  },
+  {
+    "name": "Spokane",
+    "region": "Northwest",
+    "id": 61,
+    "even": [2],
+    "odd": [2,3,12],
+    "quote": "The Lilac City"
+  },
+  {
+    "name": "St. Louis",
+    "region": "North Central",
+    "id": 62,
+    "even": [9,10,11],
+    "odd": [],
+    "quote": "Mound City"
+  },
+  {
+    "name": "St. Paul",
+    "region": "Plains",
+    "id": 63,
+    "even": [3,5],
+    "odd": [],
+    "quote": "Last City of the East"
+  },
+  {
+    "name": "Tampa",
+    "region": "Southeast",
+    "id": 64,
+    "even": [9,10],
+    "odd": [],
+    "quote": "The Big Guava"
+  },
+  {
+    "name": "Tucumcari",
+    "region": "Southwest",
+    "id": 65,
+    "even": [],
+    "odd": [10],
+    "quote": "Six-Shooter Siding"
+  },
+  {
+    "name": "Washington",
+    "region": "Northeast",
+    "id": 66,
+    "even": [3,7],
+    "odd": [],
+    "quote": "The Federal City"
+  }
+]
+
