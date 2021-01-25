@@ -1,8 +1,8 @@
 :root {
-  --rb-primary: #048a94;
-  --rb-secondary: aliceblue;
-  --rb-colour-three: #8fbec2;
-  /* --rb-image-url: url(../images/cities/houston.jpg); */
+  --rb-primary: rgb(4, 138, 148);
+  --rb-secondary: rgb(240, 248, 255);
+  --rb-colour-three: rgb(143, 190, 194);
+  --rb-secondary-transparent: rgba(240, 248, 255, 0.8);
 }
 
 .railbaron-header {
@@ -141,15 +141,15 @@
   width: 100vw;
   height: 95vh;
   padding: 0;
-  /* background-image: var(--rb-image-url); */
-  /* background-color: var(--rb-primary); */
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  z-index: -3;
+  /* background-color: var(--rb-primary); */
 }
 
 .RB-destination-container {
-  background-color: var(--rb-secondary);
+  background-color: var(--rb-secondary-transparent);
   border-radius: 5px;
   border: 1px solid black;
   padding: 2vmin;
@@ -157,16 +157,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  opacity: 0.8;
 }
 
 .RB-destination-background img {
-  width: 100px;
-  height: 100px;
   object-fit: cover;
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   z-index: -1;
   margin: 0px;
 }

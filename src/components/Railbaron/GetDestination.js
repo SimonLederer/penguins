@@ -24,7 +24,6 @@ const GetDestination = ({activePlayerArr, services, setPlayers, setCurrentPage})
             return players.map(player=>{
                 return player.id === activePlayer.id?{
                 ...activePlayer,
-                //currentCity: activePlayer.destination ?? activePlayer.homeTown,
                 destination: activePlayer.nextDestination,
                 nextDestination: undefined,
                 nextRegion: undefined,
@@ -38,7 +37,6 @@ const GetDestination = ({activePlayerArr, services, setPlayers, setCurrentPage})
     }
 
     useLayoutEffect(() => { 
-        // activePlayer.nextDestination && 
         function setCity(region){
             let city = services.getCity(region)
             setActivePlayer(player=>({
