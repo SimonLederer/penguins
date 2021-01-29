@@ -25,9 +25,9 @@ const PlayerStatistics = ({player}) => {
     return (
         <div className='statistic'>
             <h1>{player.name}</h1>
-            <span><b>Total Payout:</b> {formattedMoney.substring(0, formattedMoney.length - 3)}</span>
+            <span><b>Total Payout:</b> {formattedMoney.substring(0, formattedMoney.length - 3).replace('US','')}</span>
             <span><b>Number of Destinations:</b> {player.visitedCities.length}</span>
-            <span><b>Average Payout:</b> {averagePayout.substring(0, averagePayout.length - 3)}</span>
+            <span><b>Average Payout:</b> {averagePayout.substring(0, averagePayout.length - 3).replace('US','')}</span>
             <span><b>Number of own region rolls:</b> {player.numOwnRegion}</span>
             <span><b>Regions: </b>
                 {regions.length > 0 ? <div className='rb-regions-list'>

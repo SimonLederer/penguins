@@ -30,7 +30,7 @@ const GetPayout = ({activePlayerArr, setPlayers, services, setCurrentPage}) => {
         }
     }, [activePlayer.nextPayout, services, setActivePlayer])
     const formattedMoney = new Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD'}).format(activePlayer.nextPayout)
-    const bannerContent = `${activePlayer.currentCity.name} to ${activePlayer.destination.name}: ${formattedMoney.substring(0,formattedMoney.length - 3)}`
+    const bannerContent = `${activePlayer.currentCity.name} to ${activePlayer.destination.name}: ${formattedMoney.substring(0,formattedMoney.length - 3).replace('US','')}`
     
     return (
         <div className='railbaron'>

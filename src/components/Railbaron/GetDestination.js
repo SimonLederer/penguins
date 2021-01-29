@@ -1,7 +1,6 @@
 import React, {useState, useLayoutEffect} from 'react'
 import RBButton from './RBButton'
 import RegionSelect from './RegionSelect'
-
 const GetDestination = ({activePlayerArr, services, setPlayers, setCurrentPage}) => {
     let [activePlayer, setActivePlayer] = activePlayerArr
     let [confirmed, setConfirmed] = useState(false)  //Has a region
@@ -76,7 +75,7 @@ const GetDestination = ({activePlayerArr, services, setPlayers, setCurrentPage})
     if(confirmed){
         return (
         <div className='RB-destination-background railbaron'>
-            <img src={`${process.env.PUBLIC_URL}/images/cities/${activePlayer.nextDestination?.name.toLowerCase().replace(/[^a-z]/gi, '')}.jpg`} alt=""/>
+            <img className='rb-destination-background-image' src={`${process.env.PUBLIC_URL}/images/cities/${activePlayer.nextDestination?.name.toLowerCase().replace(/[^a-z]/gi, '')}.jpg`} alt=""/>
             <div className='RB-destination-container' style={{visibility: invisible ? 'hidden' : 'visible'}}>
                 <span>{services.generateMessage(activePlayer.name)}</span>
                 <h1>{activePlayer.nextDestination?.name}</h1>
@@ -87,7 +86,7 @@ const GetDestination = ({activePlayerArr, services, setPlayers, setCurrentPage})
                     <RBButton clickFunction={goBack} className="rb-back-btn"/>
                 </div>
             </div>
-            <div className='rb-toggle-invisible' onClick={toggleInvisible}>Invisible</div>
+            <div className='rb-toggle-invisible' onClick={toggleInvisible}></div>
         </div>
     )
     }else{

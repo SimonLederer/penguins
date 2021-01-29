@@ -200,10 +200,11 @@
   align-items: center;
   max-width: 100%;
   overflow-wrap: anywhere;
+  position: relative;
   z-index: 5;
 }
 
-.RB-destination-background img {
+.rb-destination-background-image {
   object-fit: cover;
   position: absolute;
   width: 100%;
@@ -226,12 +227,15 @@
 }
 
 .rb-toggle-invisible {
-  width: 5vmin;
-  height: 5vmin;
-  background-color: yellow;
+  width: 5vh;
+  height: 5vh;
   position: absolute;
-  left: 2vmin;
-  bottom: 2vmin;
+  left: 2vh;
+  top: 93vh;
+  background-repeat: no-repeat;
+  background-size: 5vmin;
+  background-position: center;
+  background-image: url("../images/eye.png");
 }
 
 .RB-continue-btn {
@@ -285,6 +289,11 @@ input[type="submit"] {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+}
+
+.statistics-page .rb-back-btn {
+  margin-bottom: 2vmin;
+  margin-left: 2vmin;
 }
 
 .statistics-content {
