@@ -1,10 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
 /* @import url("https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap"); */
+:root {
+  --primary-colour: rgb(4, 138, 148);
+  --secondary-colour: rgb(240, 248, 255);
+  --tertiary-colour: rgb(143, 190, 194);
+  --secondary-colour-transparent: rgba(240, 248, 255, 0.8);
+  --font-colour: rgb(0, 0, 0);
+  /* --primary-colour: rgb(161, 10, 73);
+  --secondary-colour: rgb(221, 208, 20);
+  --tertiary-colour: rgb(46, 71, 182);
+  --secondary-colour-transparent: rgba(18, 190, 55, 0.8);
+  --font-colour: rgb(0, 0, 0); */
+}
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
+  color: var(--font-colour);
 }
 
 /* width */
@@ -13,7 +27,7 @@
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--rb-colour-three);
+  background: var(--tertiary-colour);
 }
 
 .mar-b {

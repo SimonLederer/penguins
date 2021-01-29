@@ -7,7 +7,8 @@ const RegionSelect = ({setActivePlayer, regions}) => {
                 <button className='panel-btn' key={region.name} onClick={()=>{setActivePlayer(player=>({
                     ...player,
                     nextRegion: region,
-                    selectedRegion: true
+                    selectedRegion: true,
+                    numOwnRegion: player.numOwnRegion + 1,
                 }))}}>{region.name}</button>
             ))}
         </div>

@@ -21,7 +21,7 @@ export function getRegions(){
 }
 
 export function getCity(region){
-  return cities[23]
+  // return cities[48]   //23 = houston, 39 = new york, 48 = portland maine
     let {name:regName} = region
     let isEven = flipCoin()
     let roll = rollDie() + rollDie()

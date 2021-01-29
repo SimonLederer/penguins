@@ -13,7 +13,7 @@ const GetPayout = ({activePlayerArr, setPlayers, services, setCurrentPage}) => {
     const confirmPayout = () => {
         setPlayers(players => players.map(player => player.id === activePlayer.id ? {
             ...player,
-            totalPayouts: player.totalPayouts + activePlayer.nextPayout,
+            totalPayouts: parseInt(player.totalPayouts) + parseInt(activePlayer.nextPayout),
             nextPayout: undefined,
             currentCity: player.destination,
             destination: undefined
@@ -29,12 +29,16 @@ const GetPayout = ({activePlayerArr, setPlayers, services, setCurrentPage}) => {
             }))
         }
     }, [activePlayer.nextPayout, services, setActivePlayer])
-    const bannerContent = `${activePlayer.currentCity.name} to ${activePlayer.destination.name}: ${activePlayer.nextPayout}`
+    const formattedMoney = new Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD'}).format(activePlayer.nextPayout)
+    const bannerContent = `${activePlayer.currentCity.name} to ${activePlayer.destination.name}: ${formattedMoney.substring(0,formattedMoney.length - 3)}`
+    
     return (
         <div className='railbaron'>
             <DisplayBanner title={activePlayer.name} content={bannerContent}/>
-            <RBButton clickFunction={confirmPayout} text="Continue"/>
-            <RBButton clickFunction={goBack} text="Back"/>
+            <div className="RB-button-bar" >
+                <RBButton clickFunction={confirmPayout} text="Continue" className='RB-continue-btn'/>
+                <RBButton clickFunction={goBack} className='rb-back-btn'/>
+            </div>
         </div>
     )
 }

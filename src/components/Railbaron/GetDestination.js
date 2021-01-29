@@ -5,6 +5,7 @@ import RegionSelect from './RegionSelect'
 const GetDestination = ({activePlayerArr, services, setPlayers, setCurrentPage}) => {
     let [activePlayer, setActivePlayer] = activePlayerArr
     let [confirmed, setConfirmed] = useState(false)  //Has a region
+    let [invisible, setInvisible] = useState(false)
 
     const goBack = () => {
         setPlayers(players=>{
@@ -27,6 +28,7 @@ const GetDestination = ({activePlayerArr, services, setPlayers, setCurrentPage})
                 destination: activePlayer.nextDestination,
                 nextDestination: undefined,
                 nextRegion: undefined,
+                visitedCities: [...player.visitedCities, activePlayer.nextDestination],
                 selectedRegion: false
             } : player
         
@@ -34,6 +36,10 @@ const GetDestination = ({activePlayerArr, services, setPlayers, setCurrentPage})
     })
         setActivePlayer(undefined)
         setCurrentPage('MainScreen')
+    }
+
+    const toggleInvisible = () => {
+        setInvisible(invisible=>!invisible)
     }
 
     useLayoutEffect(() => { 
@@ -62,10 +68,6 @@ const GetDestination = ({activePlayerArr, services, setPlayers, setCurrentPage})
                 setCity(nextRegion)
             }
         }
-        // activePlayer.nextDestination && document.documentElement.style.setProperty(
-        //     '--rb-image-url',
-        //     `url(../images/cities/houston.jpg)`   //${activePlayer.nextDestination?.name}
-        //   );
     }, [activePlayer.nextDestination, activePlayer.nextRegion, activePlayer.currentCity.region, services, setActivePlayer, activePlayer])
     
 
@@ -74,17 +76,18 @@ const GetDestination = ({activePlayerArr, services, setPlayers, setCurrentPage})
     if(confirmed){
         return (
         <div className='RB-destination-background railbaron'>
-            <img src={`${process.env.PUBLIC_URL}/images/cities/${activePlayer.nextDestination?.name.toLowerCase()}.jpg`} alt=""/>
-            <div className='RB-destination-container'>
+            <img src={`${process.env.PUBLIC_URL}/images/cities/${activePlayer.nextDestination?.name.toLowerCase().replace(/[^a-z]/gi, '')}.jpg`} alt=""/>
+            <div className='RB-destination-container' style={{visibility: invisible ? 'hidden' : 'visible'}}>
                 <span>{services.generateMessage(activePlayer.name)}</span>
                 <h1>{activePlayer.nextDestination?.name}</h1>
                 <span>"{activePlayer.nextDestination?.quote}"</span>
                 <span>in the {activePlayer.nextDestination?.region}</span>
                 <div className='RB-button-bar'>
                     <RBButton clickFunction={confirmDestination} text='Continue' className='RB-continue-btn'/>
-                    <RBButton clickFunction={goBack} className="RB-back-btn"/>
+                    <RBButton clickFunction={goBack} className="rb-back-btn"/>
                 </div>
             </div>
+            <div className='rb-toggle-invisible' onClick={toggleInvisible}>Invisible</div>
         </div>
     )
     }else{
@@ -92,7 +95,7 @@ const GetDestination = ({activePlayerArr, services, setPlayers, setCurrentPage})
         <div className='RB-full-screen-primary'>
             <h1>You rolled the same region and may select your next region</h1>
             <RegionSelect setActivePlayer={setActivePlayer} regions={services.getRegions()}/>
-            <RBButton clickFunction={goBack} text='' className="RB-back-btn mar-b"/>
+            <RBButton clickFunction={goBack} text='' className="rb-back-btn mar-b"/>
         </div>      
         )
     }

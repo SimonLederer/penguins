@@ -1,22 +1,56 @@
-:root {
-  --rb-primary: rgb(4, 138, 148);
-  --rb-secondary: rgb(240, 248, 255);
-  --rb-colour-three: rgb(143, 190, 194);
-  --rb-secondary-transparent: rgba(240, 248, 255, 0.8);
-}
-
 .railbaron-header {
-  background-color: var(--rb-primary);
+  background-color: var(--primary-colour);
   text-align: center;
   width: 100%;
   border-bottom: 3px solid black;
-  font-size: 3.5vh;
   height: 5vh;
+}
+.railbaron-header img {
+  height: 100%;
+}
+
+.input-players-form {
+  background-color: var(--primary-colour);
+
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.input-players-form input {
+  background-color: var(--secondary-colour);
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px 5%;
   font-weight: bold;
+  font-size: 4vh;
+}
+
+.input-players-form input:focus {
+  outline: none;
+}
+
+.input-players {
+  background-color: var(--primary-colour);
+  height: 95vh;
+}
+
+.input-players button {
+  background-color: var(--secondary-colour);
+  border: none;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90vw;
+  font-size: 4vh;
+  font-weight: bold;
+  text-transform: uppercase;
+  height: 5vh;
+  cursor: pointer;
 }
 
 .panel-list {
-  background-color: var(--rb-primary);
+  background-color: var(--primary-colour);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -24,7 +58,7 @@
 }
 
 .panel-btn {
-  background-color: var(--rb-secondary);
+  background-color: var(--secondary-colour);
   width: 80%;
   margin: 1vh;
   font-size: 3vh;
@@ -34,7 +68,11 @@
 }
 
 .panel-btn:hover {
-  background-color: var(--rb-colour-three);
+  background-color: var(--tertiary-colour);
+}
+
+.rb-left-panel {
+  justify-content: space-between;
 }
 
 .main-screen-container {
@@ -55,7 +93,7 @@
 }
 
 .main-screen-right-side {
-  background-color: var(--rb-primary);
+  background-color: var(--primary-colour);
   width: 100%;
   height: 100%;
   display: flex;
@@ -76,7 +114,7 @@
 }
 
 .RB-content-box {
-  background-color: var(--rb-colour-three);
+  background-color: var(--tertiary-colour);
   width: 100%;
   /* height: 85%; */
   /* position: absolute; */
@@ -116,7 +154,7 @@
 }
 
 .RB-full-screen-primary {
-  background-color: var(--rb-primary);
+  background-color: var(--primary-colour);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -127,7 +165,11 @@
   font-size: 3vh;
 }
 
-.RB-back-btn {
+.rb-btn {
+  cursor: url("train.cur"), auto;
+}
+
+.rb-back-btn {
   background-image: url("../images/back-arrow.png");
   height: 10vh;
   width: 10vh;
@@ -144,12 +186,11 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  z-index: -3;
-  /* background-color: var(--rb-primary); */
+  background-color: var(--primary-colour);
 }
 
 .RB-destination-container {
-  background-color: var(--rb-secondary-transparent);
+  background-color: var(--secondary-colour-transparent);
   border-radius: 5px;
   border: 1px solid black;
   padding: 2vmin;
@@ -157,15 +198,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  z-index: 5;
 }
 
 .RB-destination-background img {
   object-fit: cover;
   position: absolute;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
+  width: 100%;
+  height: 95vh;
   margin: 0px;
+  text-indent: -10000px;
 }
 
 .RB-button-bar {
@@ -178,16 +222,27 @@
 }
 
 .RB-destination-container h1 {
-  font-size: 20vmin;
+  font-size: 15vmin;
+}
+
+.rb-toggle-invisible {
+  width: 5vmin;
+  height: 5vmin;
+  background-color: yellow;
+  position: absolute;
+  left: 2vmin;
+  bottom: 2vmin;
 }
 
 .RB-continue-btn {
+  -webkit-appearance: none;
   flex-grow: 2;
   height: 10vh;
   font-size: 3vmin;
   cursor: url("train.cur"), auto;
   opacity: 1;
   border-radius: 0px;
+  color: black;
 }
 
 input[type="submit"] {
@@ -201,4 +256,125 @@ input[type="submit"] {
 
 .railbaron > button {
   cursor: url("train.cur"), auto;
+}
+
+.rb-display-banner {
+  /* background-color: var(--primary-colour); */
+  position: relative;
+  background-image: url("../images/red-banner.png");
+  background-color: var(--primary-colour);
+  height: 85vh;
+  width: 100vw;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.rb-display-banner div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, calc(-50% - 10vh));
+  text-align: center;
+  font-size: 3vmin;
+}
+
+.statistics-page {
+  height: 95vh;
+  background-color: var(--primary-colour);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.statistics-content {
+  width: 80vw;
+  display: flex;
+  align-self: center;
+}
+
+.statistics-left-panel {
+  background-color: var(--primary-colour);
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+  width: 20vw;
+}
+
+.statistic-player {
+  background-color: var(--secondary-colour);
+  height: 10vh;
+  border: 1px solid black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-right: 10vh;
+  z-index: 2;
+  transition: width 0.1s;
+}
+
+.statistic-player:hover {
+  border-right: none;
+  width: calc(30vw + 1px);
+  background-image: linear-gradient(
+    to right,
+    var(--secondary-colour) 50%,
+    var(--tertiary-colour)
+  );
+}
+
+.statistic {
+  background-color: var(--tertiary-colour);
+  margin-top: 10vh;
+  margin-left: 10vw;
+  width: 50vw;
+  border: 1px solid black;
+
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+
+.statistic h1 {
+  align-self: center;
+  font-size: 5vmin;
+}
+
+.statistic > span {
+  font-size: 3vmin;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.statistic span > div {
+  background-color: var(--secondary-colour);
+  border: 1px solid black;
+  width: 55%;
+}
+
+.statistic span > div > div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.rb-regions-list {
+  max-height: 20vh;
+  font-size: 2vh;
+  overflow: auto;
+}
+
+.rb-cities-list {
+  max-height: 30vh;
+  font-size: 2vh;
+  overflow: auto;
+}
+
+@media (max-width: 1100px) {
+  .rb-display-banner {
+    background-image: url("../images/red-banner-narrow.png");
+  }
 }

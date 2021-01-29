@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import '../../css/AddPlayers.css'
 const AddPlayers = ({setPlayers, setCurrentPage, services}) => {
     let [playerInputs, setPlayerInputs] = useState([{name: '', id: 0}, {name: '', id: 1}, {name: '', id: 2}, {name: '', id: 3}, {name: '', id: 4}, {name: '', id: 5}])
     let firstEmptyPlayer = true;
@@ -18,12 +17,15 @@ const AddPlayers = ({setPlayers, setCurrentPage, services}) => {
             let city = services.getCity(services.getRegion())
             return {
                 ...player,
+                name: player.name.trim(),
                 homeTown: city,
                 currentCity: city,
                 destination: undefined,
                 nextRegion: undefined,
                 nextDestination: undefined,
                 totalPayouts: 0,
+                visitedCities: [],
+                numOwnRegion: 0,
                 nextPayout: undefined,
                 selectedRegion: false
             }
