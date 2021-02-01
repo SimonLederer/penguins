@@ -55,13 +55,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: auto;
 }
 
 .panel-btn {
   background-color: var(--secondary-colour);
   width: 80%;
   margin: 1vh;
-  font-size: 3vh;
+  font-size: 3.35vh;
   font-weight: bold;
   padding: 3vmin;
   cursor: url("train.cur"), auto;
@@ -297,7 +298,7 @@ input[type="submit"] {
 }
 
 .statistics-content {
-  width: 80vw;
+  width: 90vw;
   display: flex;
   align-self: center;
 }
@@ -306,13 +307,13 @@ input[type="submit"] {
   background-color: var(--primary-colour);
   display: flex;
   flex-direction: column;
-  margin-top: 10vh;
+  margin-top: 5vh;
   width: 20vw;
 }
 
 .statistic-player {
   background-color: var(--secondary-colour);
-  height: 10vh;
+  height: 12.5vh;
   border: 1px solid black;
   width: 100%;
   display: flex;
@@ -322,6 +323,7 @@ input[type="submit"] {
   margin-right: 10vh;
   z-index: 2;
   transition: width 0.1s;
+  font-size: 5vmin;
 }
 
 .statistic-player:hover {
@@ -336,9 +338,9 @@ input[type="submit"] {
 
 .statistic {
   background-color: var(--tertiary-colour);
-  margin-top: 10vh;
+  margin-top: 5vh;
   margin-left: 10vw;
-  width: 50vw;
+  width: 60vw;
   border: 1px solid black;
 
   display: flex;

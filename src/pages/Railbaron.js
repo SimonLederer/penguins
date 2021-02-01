@@ -20,6 +20,7 @@ const Railbaron = () => {
 
     useEffect(() => {
         window.addEventListener('beforeunload', handleUnload);
+        document.title = 'Rail Baron'
         // Remove navigation prompt
         // return window.removeEventListener('beforeunload', handleUnload);
         }, [])

@@ -21,6 +21,8 @@ const PlayerStatistics = ({player}) => {
             regions = [...regions, {name: region, num: 1}]
         }
     }
+    cities.sort((a,b)=>a.name > b.name ? 1 : -1)
+    regions.sort((a,b)=>a.name > b.name ? 1 : -1)
 
     return (
         <div className='statistic'>
@@ -34,6 +36,7 @@ const PlayerStatistics = ({player}) => {
                                         {regions.map(region=><div key={region.name}>{region.name}: <span>{region.num}&nbsp;</span></div>)}
                                     </div> : 'No regions'}
             </span>
+            <br/>
             <span><b>Destinations: </b>
                 {cities.length > 0 ? <div className='rb-cities-list'>
                                         {cities.map(city=><div key={city.name}>{city.name}: <span>{city.num}&nbsp;</span></div>)}

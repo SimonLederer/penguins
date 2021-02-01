@@ -8,9 +8,6 @@ const Statistics = ({players, setCurrentPage}) => {
     function hoverOnPlayer(player){
         setActivePlayer(player)
     }
-    function hoverOffPlayer(player){
-        // setActivePlayer(undefined)
-    }
 
     return (
         <div className='statistics-page railbaron'>
@@ -18,8 +15,7 @@ const Statistics = ({players, setCurrentPage}) => {
                 <div className="statistics-left-panel">
                     {players.map(player=>(
                         <div key={player.id} className='statistic-player' 
-                            onMouseEnter={()=>hoverOnPlayer(player)}
-                            onMouseLeave={()=>hoverOffPlayer(player)}
+                            onMouseOver={()=>hoverOnPlayer(player)}
                             >
                             <b>{player.name} </b>
                         </div>
